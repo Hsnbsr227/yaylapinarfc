@@ -302,3 +302,61 @@ html {
       font-weight: 600;
       font-size: 17px;
     }
+@media (max-width: 768px) {
+  .logo img {
+    height: 80px;
+    width: 80px;
+    left: 10px;
+    top: 10px;
+  }
+
+  .header-h1 {
+    font-size: 24px;
+  }
+
+  .numara {
+    position: static;
+    margin: 10px auto;
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .iletisim-baslik {
+    position: static;
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    width: 80% !important;
+  }
+
+  .oyuncular {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oyuncu-kart {
+    width: 80%;
+    height: auto;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .insta-box iframe {
+    height: 300px;
+  }
+}
