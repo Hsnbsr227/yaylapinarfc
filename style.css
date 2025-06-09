@@ -217,14 +217,11 @@ html {
 
 
           @media (max-width: 768px) {
-      .oyuncular {
-        flex-direction: column;
-        align-items: center;
-      }
-      .oyuncu-kart {
-        width: 90%;
-      }
-}
+  .kutum {
+    flex-direction: column;
+    font-size: 14px;
+  }
+}        
 
 .insta-container {
       display: flex;
