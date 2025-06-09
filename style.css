@@ -302,53 +302,55 @@ html {
       font-weight: 600;
       font-size: 17px;
     }
+/* Mobil ekranlar için media query */
 @media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
+  /* Menü (nav.footer) ekran altına kaymaz, ama düzenli görünür */
+  nav .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 10px;
+    background-color: #002244;
+    border-radius: 0 0 8px 8px;
+    position: relative; /* Menü hep görünür üstte kalır */
+    bottom: auto; /* Alt kısma kaydırma */
+  }
+
+  /* Menü linkleri */
+  nav .footer a {
+    font-size: 0.9rem;
+    flex: 1 1 40px;
+    max-width: 120px;
     text-align: center;
   }
+
+  /* Header ayarları (üstte kalmaya devam etsin) */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Header başlığı ortala */
   header .header-h1 {
-    margin-top: 10px;
+    font-size: 1.6rem;
+    margin: 10px 0;
   }
-  .image-container img {
-    max-width: 80%;
-    margin-bottom: 15px;
-  }
-  .oyuncular {
-    flex-direction: column;
-    align-items: center;
-  }
-  .oyuncu-kart {
-    width: 90%;
-  }
-  nav .footer {
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  nav .footer a {
-    font-size: 0.85rem;
-  }
-  #puan-durumu table {
-    min-width: 100%;
-  }
-  .insta-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .insta-box {
-    max-width: 90%;
+
+  /* Logo boyutu küçült */
+  header .logo img {
+    max-width: 50px;
   }
 }
 
-/* Mobil çok küçük ekranlar */
+/* Daha küçük telefonlar için */
 @media only screen and (max-width: 400px) {
-  header .header-h1 {
-    font-size: 1.5rem;
-  }
   nav .footer a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    max-width: 100px;
   }
-  .oyuncu-bilgi h3 {
-    font-size: 1rem;
+  
+  header .header-h1 {
+    font-size: 1.3rem;
   }
 }
