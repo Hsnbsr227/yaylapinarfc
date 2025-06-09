@@ -377,10 +377,19 @@ html {
   }
 
   /* Tablo yazı boyutu */
-  table {
+ 
+
+        table {
+    width: 100% !important;
+    table-layout: fixed; /* Hücre genişliklerini eşit yapar */
+    word-wrap: break-word; /* Uzun kelimeler satır sonuna geçer */
     font-size: 12px;
-    width: 100%; /* Tam genişlikte */
-    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   /* iframe yükseklik */
