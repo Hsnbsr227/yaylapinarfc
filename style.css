@@ -308,12 +308,15 @@ html {
   .logo img {
     height: 80px;
     width: 80px;
+    position: relative; /* left, top gibi pozisyonlandırma için relative olmalı */
     left: 10px;
     top: 10px;
   }
 
   .header-h1 {
-    font-size: 24px;
+   font-size: 24px;
+    text-align: center; /* Mobilde ortalamak güzel olur */
+    margin: 10px 0;
   }
 
   .numara {
@@ -321,45 +324,84 @@ html {
     margin: 10px auto;
     width: 90%;
     font-size: 14px;
+    text-align: center;
   }
 
+/* İletişim başlık */
   .iletisim-baslik {
     position: static;
     margin: 0 auto 10px;
     text-align: center;
   }
 
+  /* Menü */
   nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0 10px; /* Kenar boşluğu ekleyelim */
   }
 
+  /* Görsel konteyneri */
   .image-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    padding: 0 10px;
   }
 
+  /* Görsellerin genişliği */
   .image-container img {
     width: 80% !important;
+    height: auto; /* Oranları koru */
+    border-radius: 8px; /* Hafif köşe yuvarlama */
   }
 
+  /* Oyuncular bölümü */
   .oyuncular {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
+    padding: 0 10px;
   }
 
+  /* Oyuncu kart genişliği ve yüksekliği */
   .oyuncu-kart {
     width: 80%;
     height: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Hafif gölge efekti */
+    border-radius: 8px;
+    padding: 10px;
   }
 
+  /* Tablo yazı boyutu */
   table {
     font-size: 12px;
+    width: 100%; /* Tam genişlikte */
+    border-collapse: collapse;
   }
 
+  /* iframe yükseklik */
   .insta-box iframe {
+    width: 100%; /* Mobilde tam genişlik */
     height: 300px;
+    border-radius: 8px;
+    border: none;
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+        
+
+  
