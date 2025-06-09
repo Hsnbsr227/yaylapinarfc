@@ -302,42 +302,53 @@ html {
       font-weight: 600;
       font-size: 17px;
     }
-.footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #000;
-  padding: 12px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: color 0.2s ease-in-out;
-}
-
-.footer a i {
-  font-size: 18px;
-  margin-bottom: 3px;
-}
-
-.footer a:hover {
-  color: #00bfff;
-}
-
-/* Mobil uyum */
-@media screen and (max-width: 600px) {
-  .footer a {
-    font-size: 10px;
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
   }
-  .footer a i {
-    font-size: 16px;
+  header .header-h1 {
+    margin-top: 10px;
+  }
+  .image-container img {
+    max-width: 80%;
+    margin-bottom: 15px;
+  }
+  .oyuncular {
+    flex-direction: column;
+    align-items: center;
+  }
+  .oyuncu-kart {
+    width: 90%;
+  }
+  nav .footer {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  nav .footer a {
+    font-size: 0.85rem;
+  }
+  #puan-durumu table {
+    min-width: 100%;
+  }
+  .insta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .insta-box {
+    max-width: 90%;
+  }
+}
+
+/* Mobil çok küçük ekranlar */
+@media only screen and (max-width: 400px) {
+  header .header-h1 {
+    font-size: 1.5rem;
+  }
+  nav .footer a {
+    font-size: 0.75rem;
+  }
+  .oyuncu-bilgi h3 {
+    font-size: 1rem;
   }
 }
