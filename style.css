@@ -328,6 +328,12 @@ html {
     text-align: center;
   }
 
+.numara,
+  .iletisim-baslik {
+    margin-left: 0;
+    text-align: center;
+  }
+        
   /* Menü */
   nav {
     display: flex;
