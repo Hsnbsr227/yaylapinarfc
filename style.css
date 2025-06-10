@@ -216,19 +216,7 @@ html {
 
 
 
-          @media (max-width: 768px) {
-  .iletisim-baslik {
-    position: static;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .numara {
-    position: static;
-    margin: 10px auto;
-    font-size: 14px;
-  }
-}
+          
 
 
 .insta-container {
@@ -306,17 +294,22 @@ html {
 
 @media (max-width: 768px) {
   .logo img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     position: relative; /* left, top gibi pozisyonlandırma için relative olmalı */
     left: 10px;
     top: 10px;
   }
 
   .header-h1 {
-   font-size: 24px;
+   font-size: 20px;
     text-align: center; /* Mobilde ortalamak güzel olur */
     margin: 10px 0;
+  }
+
+  .oyuncu-kart h3,
+  .oyuncu-kart p {
+    font-size: 0.9em;
   }
 
   .numara {
@@ -400,7 +393,6 @@ html {
     border: none;
   }
 }
-
 
 
 
