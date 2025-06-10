@@ -394,17 +394,9 @@ html {
   }
 
 table th:nth-child(3),
-table td:nth-child(3) {
-  display: none;
-}
-
-/* Yenilen Gol sütunu: 4. sütun */
+table td:nth-child(3),
 table th:nth-child(4),
-table td:nth-child(4) {
-  display: none;
-}
-
-/* Averaj sütunu: 5. sütun */
+table td:nth-child(4),
 table th:nth-child(5),
 table td:nth-child(5) {
   display: none;
