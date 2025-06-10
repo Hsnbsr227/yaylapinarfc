@@ -316,8 +316,9 @@ html {
     position: static;
     margin: 10px auto;
     width: 90%;
-    font-size: 14px;
+    font-size: 16px; 
     text-align: center;
+    margin-left: 0;
   }
 
 /* İletişim başlık */
