@@ -301,6 +301,11 @@ html {
     top: 10px;
   }
 
+        .numara
+        {
+                margin-left: 1920px;
+        }
+
   .header-h1 {
    font-size: 20px;
     text-align: center; /* Mobilde ortalamak güzel olur */
