@@ -25,6 +25,12 @@ html {
         margin: 0 15px;
         font-weight: bold;
       }
+
+      .footer a:hover{
+        color: #14c005;
+        transition: 0.1s ease
+      }
+
       .image-container {
         display: flex;
         justify-content: center;
