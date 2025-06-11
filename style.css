@@ -293,6 +293,10 @@ html {
 
 
 @media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .logo img {
     height: 60px;
     width: 60px;
@@ -333,14 +337,44 @@ html {
     text-align: center;
   }
         
-  /* Menü */
-  nav {
+  /*Menü*/
+  /*! Menüyü Aşağı aldık*/
+  /*? Buradan Başladı */
+  .footer {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0 10px; /* Kenar boşluğu ekleyelim */
+    left:-1px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #001f00;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
   }
 
+  .footer a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    flex: 1;
+  }
+
+  .footer a i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .footer a span {
+    display: block;
+  }
+  /*? Burada biti */
+
+  /*! Halısaha ligi , takım logosu  */
+  /*! ve Türk Bayrağı Logoları için*/
+  /*? Buradan başladı */
   /* Görsel konteyneri */
   .image-container {
     display: flex;
@@ -350,12 +384,15 @@ html {
     padding: 0 10px;
   }
 
+  
   /* Görsellerin genişliği */
   .image-container img {
     width: 80% !important;
     height: auto; /* Oranları koru */
     border-radius: 8px; /* Hafif köşe yuvarlama */
   }
+
+  /*? Burada Bitti */
 
   /* Oyuncular bölümü */
   .oyuncular {
@@ -371,18 +408,17 @@ html {
     width: 80%;
     height: auto;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Hafif gölge efekti */
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 8px; 
+    /*! padding: 10px; özelliği kaldırıldı */
+    /*? sebebi Kutuların içinde beyaz boşluklar*/
   }
 
   /* Tablo yazı boyutu */
  
-
    table {
     width: 100% !important;
-    table-layout: fixed; /* Hücre genişliklerini eşit yapar */
     word-wrap: break-word; /* Uzun kelimeler satır sonuna geçer */
-    font-size: 12px;
+    font-size: 15px;
   }
 
   th, td {
@@ -391,20 +427,21 @@ html {
     white-space: normal;
   }
 
-  /* iframe yükseklik */
+  /* ! Kodlama düzeltilmedi */
   .insta-box iframe {
     width: 100%; /* Mobilde tam genişlik */
     height: 300px;
     border-radius: 8px;
     border: none;
   }
-
-table th:nth-child(),
-table td:nth-child(),
+  /*! Burası Yenilen Gol ,
+  /*!, Averaj ve Son 5 hücrelerini kapatır. */
+table th:nth-child(9),
+table td:nth-child(9),
+table th:nth-child(11),
+table td:nth-child(11),
 table th:nth-child(8),
-table td:nth-child(8),
-table th:nth-child(10),
-table td:nth-child(10) {
+table td:nth-child(8) {
   display: none;
 }
 
