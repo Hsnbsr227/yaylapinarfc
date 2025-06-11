@@ -301,12 +301,6 @@ html {
     top: 10px;
   }
 
-        .numara {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
   .header-h1 {
    font-size: 20px;
     text-align: center; /* Mobilde ortalamak güzel olur */
@@ -327,14 +321,13 @@ html {
     margin-left: 0;
   }
 
-/* İletişim başlık */
   .iletisim-baslik {
     position: static;
     margin: 0 auto 10px;
     text-align: center;
   }
 
-.numara,
+   .numara,
   .iletisim-baslik {
     margin-left: 0;
     text-align: center;
@@ -385,7 +378,7 @@ html {
   /* Tablo yazı boyutu */
  
 
-        table {
+   table {
     width: 100% !important;
     table-layout: fixed; /* Hücre genişliklerini eşit yapar */
     word-wrap: break-word; /* Uzun kelimeler satır sonuna geçer */
@@ -406,12 +399,12 @@ html {
     border: none;
   }
 
-table th:nth-child(3),
-table td:nth-child(3),
-table th:nth-child(4),
-table td:nth-child(4),
 table th:nth-child(5),
-table td:nth-child(5) {
+table td:nth-child(5),
+table th:nth-child(6),
+table td:nth-child(6),
+table th:nth-child(7),
+table td:nth-child(7) {
   display: none;
 }
 
