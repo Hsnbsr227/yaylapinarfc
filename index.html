@@ -52,7 +52,7 @@
       <a href="#puan-durumu"><i class="fa fa-calendar"></i><span>Fikstür</span></a>
       <a href="#haberler"><i class="fa fa-newspaper"></i><span>Haberler</span></a>
       </div>
-
+      
     </nav>
     <section id="ana-sayfa">
       <h2>Hoş Geldiniz!</h2>
@@ -271,14 +271,17 @@
       
     </section>
     <footer>
-      <p>&copy; 2025 Yaylapınar FC</p>
-    </footer>
+  <p>&copy; <span id="year"></span> Yaylapınar FC</p>
+</footer>
     <div class="copyright">
       <p>
         Tüm hakları saklıdır. Bu site Yaylapınar FC adına hazırlanmıştır.
         İzinsiz kopyalanamaz ve çoğaltılamaz.
       </p>
     </div>
+
+
+
     <script>
       window.addEventListener("scroll", function () {
         const images = document.querySelector(".image-container");
@@ -288,6 +291,10 @@
           images.classList.remove("shrink");
         }
       });
+
+      /* Telif Hakkı yılını güncellemek için kullanıyoruz */
+      document.getElementById('year').textContent = new Date().getFullYear();
+
     </script>
   </body>
 </html>
