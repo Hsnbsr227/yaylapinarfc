@@ -401,10 +401,10 @@ html {
 
 table th:nth-child(),
 table td:nth-child(),
-table th:nth-child(),
-table td:nth-child(),
-table th:nth-child(9),
-table td:nth-child(9) {
+table th:nth-child(8),
+table td:nth-child(8),
+table th:nth-child(10),
+table td:nth-child(10) {
   display: none;
 }
 
