@@ -444,7 +444,7 @@ html {
   /* ! Kodlama düzeltilmedi */
   .insta-box iframe {
     width: 100%; /* Mobilde tam genişlik */
-    height: 470px;
+    height: 480px;
     border-radius: 8px;
     border: none;
   }
