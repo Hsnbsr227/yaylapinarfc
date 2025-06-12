@@ -133,6 +133,43 @@
     box-shadow: 0 0 15px black;
   }
 
+  .reklam-kutusu .yatay-reklam {
+  display: none;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  margin-bottom: 80px; /* Menü ile arasındaki boşluk */
+}
+
+  @media (max-width: 768px) {
+
+    /*Burada Dikey reklamı kapatıyoruz   */
+  .reklam-kutusu .dikey-reklam{
+      display: none;
+    }
+
+
+    .reklam-kutusu .yatay-reklam{
+      display: block;
+      height: 70px;
+      width: 98%;
+    }
+    
+    .reklam-kutusu {
+    position: relative; /* ❗ Artık sabit değil */
+    width: 100%;
+    height: auto;
+    margin: 20px 0 90px; /* Üstten 40px, alttan 80px boşluk */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  }
+
 
 
   /*? Burada biti */
@@ -180,7 +217,8 @@
   </section>
 
   <div class="reklam-kutusu">
-   <a href="https://www.instagram.com/yaylapinar_fc/" target="_blank"> <img src="Resimler/Yaylapınar Fc Instagram Reklam banner (Dikey).png" alt=""></a>
+   <a href="https://www.instagram.com/yaylapinar_fc/" target="_blank"> <img class="dikey-reklam" src="Resimler/Yaylapınar Fc Instagram Reklam banner (Dikey).png" alt="Dikey"></a>
+   <a href="https://www.instagram.com/yaylapinar_fc/" target="_blank"></a><img class="yatay-reklam" src="Resimler/Yaylapınar Fc Instagram Reklam banner (Yatay).png" alt="Yatay" >
   </div>
 
   <footer>
