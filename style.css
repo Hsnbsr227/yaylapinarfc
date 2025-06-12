@@ -444,18 +444,18 @@ html {
   /* ! Kodlama düzeltilmedi */
   .insta-box iframe {
     width: 100%; /* Mobilde tam genişlik */
-    height: 300px;
+    height: 370px;
     border-radius: 8px;
     border: none;
   }
   /*! Burası Yenilen Gol ,
   /*!, Averaj ve Son 5 hücrelerini kapatır. */
+table th:nth-child(8),
+table td:nth-child(8),
 table th:nth-child(9),
 table td:nth-child(9),
 table th:nth-child(11),
-table td:nth-child(11),
-table th:nth-child(8),
-table td:nth-child(8) {
+table td:nth-child(11) {
   display: none;
 }
 
