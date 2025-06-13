@@ -19,6 +19,16 @@
       href="Resimler/YAYLAPINAR FC TAKIM LOGOSU (1)-Photoroom.png"
       type="image/x-icon"
     />
+
+      <script>
+    window.onload = function () {
+     if (window.location.pathname.endsWith("sponsorlar.html")) {
+        history.replaceState(null, "", "index.html"); // Ana sayfayı geçmişe ekle
+        history.pushState(null, "", "sponsorlar.html"); // Şu anki sayfayı tekrar ayarla
+      }
+    };
+</script>
+    
     <style>
   
 
